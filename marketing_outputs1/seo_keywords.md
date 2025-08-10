@@ -1,0 +1,5 @@
+- AI-powered Excel automation
+- Excel AI
+- AI for Excel
+- AI Excel Tools
+- Excel AI formula generator

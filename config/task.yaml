@@ -1,0 +1,61 @@
+# config/tasks.yaml (updated with agent assignments)
+market_research:
+  description: >
+    Using search and optional scrape tools, research {product_name} for SMEs.
+    Return a compact markdown report (150-200 words) with sections:
+    ## Summary (3-4 sentences)
+    ## Competitors (3 bullets)
+    ## Customer Needs (3 bullets)
+    ## Opportunities (3 bullets)
+  expected_output: "Markdown report, 150–200 words with the 4 sections above."
+  output_file: "marketing_outputs/market_research_report.md"
+  agent: "marketing_head"
+
+executive_summary:
+  description: >
+    Summarize the market research report into <=150 words, in markdown.
+    Sections: ## Key Takeaway (2-3 sentences), ## Top Competitors (3 bullets), ## Top Needs (3 bullets)
+  expected_output: "<=150-word markdown summary with specified sections."
+  output_file: "marketing_outputs/executive_summary.md"
+  agent: "marketing_head"
+  context: ["market_research"]
+
+blog_post:
+  description: >
+    Write a blog post introducing {product_name} for SMEs using the executive summary.
+    Requirements: 150-200 words, Markdown, Title (<=60 chars), 2 short paragraphs, 3 bullet benefits, 1-line CTA.
+  expected_output: "Markdown blog post 150-200 words with title, 2 paras, 3 bullets, CTA."
+  output_file: "marketing_outputs/blog_post.md"
+  agent: "blogger"
+  context: ["executive_summary"]
+
+seo_keywords:
+  description: >
+    From the executive summary and blog, output exactly 10-15 SEO keywords (2-3 words each).
+    Return plain text, one keyword per line, no numbering or extra text.
+  expected_output: "10-15 lines of keywords, plain text."
+  output_file: "marketing_outputs/seo_keywords.txt"
+  agent: "seo_specialist"
+  context: ["executive_summary", "blog_post"]
+
+social_media_posts:
+  description: >
+    Create exactly 2 platform-specific posts using the blog and keywords:
+    - LinkedIn: 220-280 chars, include 1-2 hashtags, professional tone
+    - X: 180-220 chars, include 1-2 hashtags, crisp
+    Include one keyword in each. Output in the exact format:
+    LinkedIn: <post>
+    X: <post>
+  expected_output: "Two lines starting with 'LinkedIn:' and 'X:' respectively."
+  output_file: "marketing_outputs/social_posts.txt"
+  agent: "social_writer"
+  context: ["blog_post", "seo_keywords"]
+
+content_calendar:
+  description: >
+    Create a 1-week content calendar as a markdown table with columns Day | Content Type | Title/Theme | Platform(s).
+    Fill using the blog and posts provided. Use exactly 5 rows (Mon-Fri). No extra text.
+  expected_output: "Markdown table with 5 rows, no extra text."
+  output_file: "marketing_outputs/content_calendar.md"
+  agent: "marketing_head"
+  context: ["blog_post", "social_media_posts", "seo_keywords"]

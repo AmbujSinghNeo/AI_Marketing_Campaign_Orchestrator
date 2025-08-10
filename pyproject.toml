@@ -1,0 +1,15 @@
+[project]
+name = "crewai-task"
+version = "0.1.0"
+description = "A project to demonstrate agents with CrewAI"
+readme = "README.md"
+requires-python = ">=3.10, <4.0"
+dependencies = [
+    "crewai",          # <-- List each package separately
+    "crewai-tools",
+    "langchain-groq",
+    "python-dotenv",
+    "jupyterlab",      # Add jupyterlab here for notebooks
+    "ipykernel"
+]
+

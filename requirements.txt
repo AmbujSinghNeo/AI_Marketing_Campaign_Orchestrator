@@ -1,0 +1,10 @@
+pyyaml>=6.0
+crewai
+langchain-groq
+python-dotenv
+requests
+beautifulsoup4
+pysqlite3-binary
+crewai-tools
+
+

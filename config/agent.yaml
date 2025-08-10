@@ -1,0 +1,45 @@
+# config/agents.yaml
+marketing_head:
+  role: "Head of Marketing"
+  goal: "Produce concise research and planning outputs."
+  backstory: "Strategic marketer focused on clear, brief deliverables."
+  llm: "utility"           # map to utility_llm in main
+  verbose: false
+  max_iter: 3
+  allow_delegation: false
+  max_rpm: 3
+  tools: ["scraper_tool", "serper_tool"]
+
+blogger:
+  role: "Content Writer for Blogs"
+  goal: "Write concise, structured blogs and summaries."
+  backstory: "Practical writer optimizing for clarity and SEO basics."
+  llm: "writer"            # map to writer_llm in main
+  verbose: false
+  max_iter: 1
+  allow_delegation: false
+  max_rpm: 1
+  tools: []
+
+seo_specialist:
+  role: "SEO Specialist"
+  goal: "Extract minimal, high-impact keywords."
+  backstory: "Data-driven optimizer who outputs only essentials."
+  llm: "utility"
+  verbose: false
+  max_iter: 1
+  allow_delegation: false
+  max_rpm: 1
+  tools: []
+
+social_writer:
+  role: "Social Media Content Creator"
+  goal: "Create short, platform-specific posts."
+  backstory: "Concise copywriter tailoring to platform norms."
+  llm: "utility"
+  verbose: false
+  max_iter: 1
+  allow_delegation: false
+  max_rpm: 1
+  tools: []
+
