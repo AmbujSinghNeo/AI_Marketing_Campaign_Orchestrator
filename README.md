@@ -29,12 +29,12 @@ graph TD
     end
 
     subgraph "Agent Tasks & Workflow"
-        B{1. Market Research Task}
-        C{2. Executive Summary Task}
-        D{3. Blog Post Task}
-        E{4. SEO Keywords Task}
-        F{5. Social Media Posts Task}
-        G{6. Content Calendar Task}
+        B{ Market Research Task}
+        C{ Executive Summary Task}
+        D{ Blog Post Task}
+        E{ SEO Keywords Task}
+        F{ Social Media Posts Task}
+        G{ Content Calendar Task}
     end
 
     subgraph "Generated Outputs"
