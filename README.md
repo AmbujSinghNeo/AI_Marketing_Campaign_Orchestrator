@@ -6,14 +6,6 @@ Automated marketing content generation powered by CrewAI multi-agent system. Gen
 [![CrewAI](https://img.shields.io/badge/CrewAI-Latest-green.svg)](https://crewai.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## 🎯 What It Does
-
-Transform any product idea into a complete marketing campaign:
-- **Research** competitors and market opportunities
-- **Generate** SEO-optimized blog posts
-- **Create** platform-specific social media content  
-- **Extract** high-impact keywords
-- **Schedule** content in marketing calendars
 
 ## 🏗️ System Architecture
 
@@ -62,7 +54,7 @@ python main.py
 text
 
 ## 📁 Project Structure
-
+```
 ├── config/
 │ ├── agents.yaml # AI agent configurations
 │ └── tasks.yaml # Campaign workflow tasks
@@ -71,7 +63,7 @@ text
 │ └── config.py # Core configurations
 ├── marketing_outputs/ # Generated content
 └── cache/ # API response cache
-
+```
 text
 
 ## 🎮 Usage Example
@@ -147,15 +139,6 @@ text
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-## 🔗 Links
-
-- **Repository**: [GitHub](https://github.com/AmbujSinghNeo/AI_Marketing_Campaign_Orchestrator)
-- **Issues**: [Report Bug](https://github.com/AmbujSinghNeo/AI_Marketing_Campaign_Orchestrator/issues)
-- **Author**: [AmbujSinghNeo](https://github.com/AmbujSinghNeo)
-
----
-
-**⭐ Star this repo if it helps your marketing workflow!**
 
 
 
@@ -175,7 +158,15 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 This project automates the entire process of creating a marketing campaign using a team of autonomous AI agents. Powered by [CrewAI](https://www.crewai.com/) and accelerated by ultra-fast [Groq](https://groq.com/) LLMs, this orchestrator takes a simple product name and description and generates a comprehensive set of marketing materials.
 
-The system performs market research, writes blog posts, extracts SEO keywords, creates social media content, and organizes it all into a weekly content calendar.
+## 🎯 What It Does
+
+Transform any product idea into a complete marketing campaign:
+- **Research** competitors and market opportunities
+- **Generate** SEO-optimized blog posts
+- **Create** platform-specific social media content  
+- **Extract** high-impact keywords
+- **Schedule** content in marketing calendars
+
 
 ***
 
@@ -332,6 +323,17 @@ The script will run and you'll find all the generated marketing materials inside
 ## 🤝 Contributing
 
 Contributions are welcome! If you have ideas for new features, agents, or improvements, feel free to fork the repository and submit a pull request.
+
+## 🔗 Links
+
+- **Repository**: [GitHub](https://github.com/AmbujSinghNeo/AI_Marketing_Campaign_Orchestrator)
+- **Issues**: [Report Bug](https://github.com/AmbujSinghNeo/AI_Marketing_Campaign_Orchestrator/issues)
+- **Author**: [AmbujSinghNeo](https://github.com/AmbujSinghNeo)
+
+---
+
+**⭐ Star this repo if it helps your marketing workflow!**
+
 
 ## 📜 License
 
