@@ -53,87 +53,10 @@ python main.py
 
 text
 
-## 📁 Project Structure
-```
-├── config/
-│ ├── agents.yaml # AI agent configurations
-│ └── tasks.yaml # Campaign workflow tasks
-├── main/
-│ ├── main.py # Application entry point
-│ └── config.py # Core configurations
-├── marketing_outputs/ # Generated content
-└── cache/ # API response cache
-```
-text
 
-## 🎮 Usage Example
-
-**Input:**
-crew.kickoff(inputs={
-"product_name": "AI Excel Automation Tool",
-"product_description": "Automates Excel tasks with AI"
-})
 
 text
 
-**Generated Output:**
-- **Market Research** (150-200 words)
-- **Blog Post** with SEO optimization
-- **Social Posts** for LinkedIn & X/Twitter
-- **Keywords** for search ranking
-- **Content Calendar** for 5-day schedule
-
-## ⚙️ Key Features
-
-| Feature | Description |
-|---------|-------------|
-| 🧠 **Multi-Agent AI** | 4 specialized agents working collaboratively |
-| 🔍 **Smart Research** | Automated web scraping & competitor analysis |
-| ✍️ **Content Creation** | SEO-optimized blogs & social posts |
-| 📈 **SEO Optimization** | Keyword extraction & search ranking |
-| 📅 **Content Planning** | Structured marketing calendars |
-| ⚡ **Caching System** | Optimized API usage & cost reduction |
-
-## 🛠️ Tech Stack
-
-- **CrewAI** - Multi-agent orchestration
-- **GROQ** - LLM provider (Gemma2-9b-it)
-- **Python 3.8+** - Core language
-- **YAML** - Configuration management
-- **Custom Tools** - Web scraping & search
-
-## 📊 Sample Output
-
-### Generated Blog Post
-Revolutionize Your Excel Workflow with AI Automation
-Transform repetitive Excel tasks into automated workflows...
-
-✅ 90% time reduction on data processing
-
-✅ Error-free calculations and reporting
-
-✅ Smart data analysis and insights
-
-[Get Started Today →]
-
-text
-
-### Social Media Posts
-LinkedIn: Tired of manual Excel work? Our AI tool automates spreadsheet tasks,
-saving 10+ hours weekly. Perfect for SMEs! #ExcelAutomation #ProductivityAI
-
-X: Excel automation just got smarter 🤖 Save hours on repetitive tasks with
-AI-powered workflows. Built for modern businesses! #Excel #AI
-
-text
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/new-feature`)
-3. Commit changes (`git commit -m 'Add new feature'`)
-4. Push to branch (`git push origin feature/new-feature`)
-5. Open Pull Request
 
 ## 📄 License
 
@@ -301,28 +224,88 @@ The script will run and you'll find all the generated marketing materials inside
 
 ***
 
-## 📂 Project Structure
-
+## 📁 Project Structure
 ```
-.
-├── main.py                 # The main script to run the crew
-├── requirements.txt        # Project dependencies
-├── .env                    # Your secret API keys (not committed)
-├── marketing_outputs/      # Directory for all generated files
-│   ├── blog_post.md
-│   ├── content_calendar.md
-│   ├── executive_summary.md
-│   ├── market_research_report.md
-│   ├── seo_keywords.txt
-│   └── social_posts.txt
-└── cache/                  # Caches search and scrape results
+├── config/
+│ ├── agents.yaml # AI agent configurations
+│ └── tasks.yaml # Campaign workflow tasks
+├── main/
+│ ├── main.py # Application entry point
+│ └── config.py # Core configurations
+├── marketing_outputs/ # Generated content
+└── cache/ # API response cache
 ```
 
-***
+
+## 🎮 Usage Example
+
+**Input:**
+crew.kickoff(inputs={
+"product_name": "AI Excel Automation Tool",
+"product_description": "Automates Excel tasks with AI"
+})
+
+
+
+**Generated Output:**
+- **Market Research** (150-200 words)
+- **Blog Post** with SEO optimization
+- **Social Posts** for LinkedIn & X/Twitter
+- **Keywords** for search ranking
+- **Content Calendar** for 5-day schedule
+
+## ⚙️ Key Features
+
+| Feature | Description |
+|---------|-------------|
+| 🧠 **Multi-Agent AI** | 4 specialized agents working collaboratively |
+| 🔍 **Smart Research** | Automated web scraping & competitor analysis |
+| ✍️ **Content Creation** | SEO-optimized blogs & social posts |
+| 📈 **SEO Optimization** | Keyword extraction & search ranking |
+| 📅 **Content Planning** | Structured marketing calendars |
+| ⚡ **Caching System** | Optimized API usage & cost reduction |
+
+## 🛠️ Tech Stack
+
+- **CrewAI** - Multi-agent orchestration
+- **GROQ** - LLM provider (Gemma2-9b-it)
+- **Python 3.8+** - Core language
+- **YAML** - Configuration management
+- **Custom Tools** - Web scraping & search
+
+## 📊 Sample Output
+
+### Generated Blog Post
+Revolutionize Your Excel Workflow with AI Automation
+Transform repetitive Excel tasks into automated workflows...
+
+✅ 90% time reduction on data processing
+
+✅ Error-free calculations and reporting
+
+✅ Smart data analysis and insights
+
+[Get Started Today →]
+
+
+
+### Social Media Posts
+LinkedIn: Tired of manual Excel work? Our AI tool automates spreadsheet tasks,
+saving 10+ hours weekly. Perfect for SMEs! #ExcelAutomation #ProductivityAI
+
+X: Excel automation just got smarter 🤖 Save hours on repetitive tasks with
+AI-powered workflows. Built for modern businesses! #Excel #AI
+
+**
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you have ideas for new features, agents, or improvements, feel free to fork the repository and submit a pull request.
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/new-feature`)
+3. Commit changes (`git commit -m 'Add new feature'`)
+4. Push to branch (`git push origin feature/new-feature`)
+5. Open Pull Request
+
 
 ## 🔗 Links
 
